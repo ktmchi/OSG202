@@ -1,0 +1,26 @@
+// Bộ đếm giờ
+countdown() {
+    local seconds=$1
+
+    while [ $seconds -gt 0 ]; do
+        echo -ne "Thời gian còn lại: $seconds giây\033[0K\r"
+        sleep 1
+        ((seconds--))
+    done
+
+    echo -e "\nHết thời gian!"
+}
+
+# Bắt sự kiện Ctrl+C
+trap ctrl_c INT
+
+ctrl_c() {
+    echo -e "\nĐã dừng đếm thời gian."
+    exit 1
+}
+
+# Thời gian đếm ngược (ví dụ: 15 giây)
+time_seconds=15
+
+# Bắt đầu đếm thời gian
+countdown $time_seconds
