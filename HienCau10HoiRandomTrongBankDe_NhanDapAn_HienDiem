@@ -20,7 +20,7 @@ total_points=0
 shown_indices=()
 
 # Loop through each question in the JSON file
-for (( i = 0; i < total_questions; i++ )); do
+for (( i = 0; i < 10; i++ )); do
     # Get a random index
     random_index=$(( RANDOM % total_questions ))
     
