@@ -1,0 +1,371 @@
+
+[
+    {
+        "question": "What color is hippo milk?",
+        "options": ["1.Green", "   2.White", "   3.Pink", "   4.Gray"],
+        "correctAnswer": 3,
+        "difficulty": "easy"
+    },
+    {
+        "question": "What color blood does a spider have?",
+        "options": ["   1.Red", "   2.Blue", "   3.Transparent", "   4.Yellow"],
+        "correctAnswer": 3,
+        "difficulty": "easy"
+    },
+    {
+       "question": "What part does a snail breathe through?",
+        "options": ["   1.Nose", "   2.Legs", "   3.Back", "   4.Beard"],
+        "correctAnswer": 2,
+        "difficulty": "easy"
+    },
+    {
+       "question": "What group of animals do frogs belong to?",
+        "options": ["Amphibians", "Mammals", "Primates", "Reptiles"],
+        "correctAnswer": "1",
+        "difficulty": "easy"
+    },
+    {
+       "question": "Why are corals similar to plants but classified as Invertebrates (invertebrates)?",
+        "options": ["Coral reproduces by germination", "Corals are capable of photosynthesis", "Corals use tentacles around their mouths to catch new animals and digest them", "All are beneficial organisms that provide food"],
+        "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+       "question": "Which type of Worm belongs to the clean Worm group?",
+        "options": ["Earthworms", "Roundworm", "Tapeworm", "Pinworms"],
+        "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+       "question": "Which characteristic is incorrect when talking about the Mollusca group?",
+        "options": ["The body is soft, often covered by a limestone shell", "Large number of species, different in shape and size", " Representative: mussels, snails, mussels, oysters,...", "All are beneficial organisms that provide food"],
+        "correctAnswer": "4",
+        "difficulty": "easy"
+    },                
+    {
+        "question": "Which of the following animal groups has the largest number of species?",
+        "options": ["Fish Group", "Arthropod group", "Worm Group", "Intestinal cavity group"],
+        "correctAnswer": "2",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which fish does not belong to the bony fish class?",
+      "options": ["Salmon", "Perch", "Carp", "Stingray"],
+       "correctAnswer": "4",
+        "difficulty": "easy"
+    },
+    {
+      "question": "The way the frog moves is:",
+      "options": ["Leapfrog", "Swimming", "Stretch the body", "Leap and swim"],
+       "correctAnswer": "4",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which characteristic is incorrect when talking about reptiles?",
+      "options": ["A group of animals adapted to life on land, except for a few species", "Reptiles lay eggs", " Respiration through the skin and lungs", "Representatives: snakes, lizards, turtles, crocodiles,..."],
+       "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+      "question": "The dolphin in the picture represents which of the following animal groups?",
+      "options": ["Fish", "Animals", "Amphibians", "Reptiles"],
+       "correctAnswer": "2",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Most mammals give birth and breastfeed their young, however there are some species that lay eggs",
+      "options": ["Pig", "Monkey", "Platypus", "Kangaroo"],
+      "correctAnswer": "3",
+        "difficulty": "easy"    
+    },
+    {
+      "question": "Of the following animal classes, which is the most evolved?",
+      "options": ["Class Reptiles", "Class Crustacea", "Class Amphibia", "Class Animals"],
+       "correctAnswer": "4",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which group of species includes natural enemies that kill insects?",
+      "options": ["Lizards, flagtails, toads, starlings", "Lizards, kestrels, owls, wildcats", "Flagfish, toads, starlings, owls", "Toad, owl, wildcat, kestrel"],
+       "correctAnswer": "1",
+        "difficulty": "easy"
+    },
+    {
+      "question": "What harmful effects do mosquitoes have:",
+      "options": ["Is a vector of disease transmission", "Vandalism of household items, schools, factories,...", "Destroying crops", "Toxic and dangerous to humans"],
+       "correctAnswer": "1",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Observe the development life cycle of caterpillars, which stage affects crop productivity the most?",
+      "options": ["Butterfly", "Eggs", "Larvae", "Pupa"],
+       "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which animal is the vector for transmitting Covid – 19?",
+      "options": ["Night owl", "Squirrel", "Bat", "Monkey"],
+       "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which animals transmit the plague?",
+      "options": ["Mouse", "Rabbit", "Mosquitoes", "Cat"],
+       "correctAnswer": "1",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which of the following animals is not in the Vietnam Red Book?",
+      "options": ["Dolphin", "Con Dao black squirrel", "Snub-nosed viper", "White-tailed blue pheasant"],
+       "correctAnswer": "1",
+        "difficulty": "easy"
+    },
+    {
+      "question": "The toadfish in the picture is representative of which of the following animal groups?",
+      "options": ["Fish", "Amphibians", "Reptiles", "Animals"],
+       "correctAnswer": "2",
+        "difficulty": "easy"
+    },
+    {
+      "question": "What action does the dragonfly touching the water represent?",
+      "options": ["Signs that it's raining", "Lay eggs", "Bathing", "Mating"],
+       "correctAnswer": "2",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which of the following groups of animals only live in water?",
+      "options": ["Bees, fish, weasels, tigers, eels", "Fish, lizard, tiger, shrimp, crab", "Fish, shrimp, snails, crabs, squid", "Birds, snails, squid, crabs, octopuses"],
+       "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which of the following animals has been domesticated by humans to become pets?",
+      "options": ["Tiger", "Fox", "Whale", "Chicken"],
+       "correctAnswer": "4",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Animal habitats include",
+      "options": ["Underwater and on land", "In the air", "In the soil", "All are correct"],
+       "correctAnswer": "4",
+        "difficulty": "easy"
+    },
+    {
+      "question": "How many animal species have been discovered?",
+      "options": ["100 thousand species", "1.5 million species", "10 million species", "3 thousand species"],
+       "correctAnswer": "2",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which of the following birds belongs to the group of swimming birds?",
+      "options": ["Ostrich", "Hello", "Penguin", "Eagle"],
+       "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Animals have an outer covering that helps protect their bodies",
+      "options": ["Scales", "Feathers", "Cilia", "All of the above answers"],
+       "correctAnswer": "1",
+        "difficulty": "easy"
+    },
+    {
+      "question": "Which animal needs to undergo molting when reaching adulthood?",
+      "options": ["Fish", "Ants", "Butterfly", "Birds"],
+       "correctAnswer": "3",
+        "difficulty": "easy"
+    },
+    {
+      "question": "What position do horses usually sleep in?",
+      "options": ["Lie down", "Standing", "Sit", "Kneel"],
+       "correctAnswer": "2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The role of mushrooms in human life is ?",
+        "options": ["Making food", "Producing beer and wine, making yeast", "Making pharmaceuticals", "All three answers above"],
+        "correctAnswer": 4,
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is not the role of mushrooms in nature?",
+        "options": ["Decomposition of organic matter (dead organisms and waste)", "Make food for animals", "Clean the environment", "Making pharmaceuticals"],
+        "correctAnswer": 4,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Characteristics that distinguish poisonous mushrooms from non-toxic mushrooms are:",
+        "options": ["Based on the reproductive organs of fungi, which are spores", "Based on the number of cells it makes up", "Based on external characteristics", "Based on the living environment"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Characteristics that distinguish unicellular fungi from multicellular fungi are:",
+        "options": ["Based on the reproductive organs of fungi, which are spores", "Based on the number of cells it makes up", "Based on external characteristics", "Based on the living environment"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Mushroom habitat: ",
+        "options": ["Only living on earth", "Only live on earth", "Wet places such as wet soil, straw, food, fruits...", "Only lives in water"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Poisonous mushrooms are different from regular mushrooms: ",
+        "options": ["Form of reproduction", "Cell structure", "There is an additional layer surrounding the mushroom body under the mushroom cap called the stem ring and the mushroom base", "Living environment"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Toxic mushrooms often have which of the following characteristics?",
+        "options": ["Very colorful", "Very large in size", "Usually lives around trees", "Gives off a seductive scent"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why mushrooms are not a type of plant: ",
+        "options": ["Has a fibrous form", "Reproduce mainly by spores", "There is no chlorophyll, so there is no photosynthesis to synthesize organic matter", "Does not have stem or leaf form"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Cactus, camel, prickly pear are typical creatures that have which environment: ",
+        "options": ["Snowy mountains", "Desert", "Tropical forests", "Coniferous forest"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "The environments with the greatest biodiversity are:",
+        "options": ["Snowy mountains", "Coniferous forest", "Tropical forests", "Desert"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Animal diversity is shown in:",
+        "options": ["Number of species", "Living environment", "Body structure", "All 3 answers are correct"],
+        "correctAnswer": 4,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Flutes and parrots can speak human language. This is a behavioral type: ",
+        "options": ["congenital", "learned", "instinct", "is both instinctive and learned"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Worker bees work diligently all their lives to serve the queen bee for reproduction and attack enemies to destroy the nest. This is a type of behavior: ",
+        "options": ["altruistic", "hierarchy", "foraging", "reproduction"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "The phenomenon of male peacocks dancing and showing off their colorful feathers is a behavioral phenomenon: ",
+        "options": ["flirt", "hierarchy", "altruistic", "territory"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is reproductive behavior?",
+        "options": ["The kingfisher is waiting to catch fish", "The cranes fly south to avoid the cold", "Birds carry materials to make nests", "The cat stalks the mouse"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "The phenomenon that a dog will no longer bite or bark if a stranger enters the house many times is an acquired habit due: ",
+        "options": ["used to being greasy", "implicit learning", "imprint", "learn wisely"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "The important factor that determines the growth and development of animals is: ",
+        "options": ["hormones", "genetic factors", "temperature and light", "food"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Organisms belong to a thermodynamic system: ",
+        "options": ["Open system", "Closed system", "Isolated system", "Isolated system"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following groups of animals breathe using an air tube system?",
+        "options": ["Shrimp, crab", "Intestinal cavity", "Insects", "River mussels"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Hydra is representative of which of the following animal groups?",
+        "options": ["Intestine cavity", "Worms", "Soft body", "Arthritis"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following characteristics can be used to distinguish between Invertebrates and Vertebrates?",
+        "options": ["Exoskeleton", "Crust", "Spinal bones", "Calcium shell"],
+"correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Lizards' breathing is achieved thanks to:",
+        "options": ["Back muscles contract and relax, changing the volume of the chest", "The intercostal muscles contract and relax, changing the volume of the chest cavity", "Lifting and lowering movement of the oral shelf", "The intercostal muscles contract and relax in combination with the raising and lowering of the oral shelf"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Lizards have the habit of catching prey at:",
+        "options": ["During the day", "At night", "Afternoon", "Afternoon and night"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "The frog's musculature is most developed in:",
+        "options": ["Head muscle", "Thigh muscles", "Thigh muscles and hamstrings", "Muscles and head muscles"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Frog skeleton has the following roles:",
+        "options": ["Create space to protect the brain, spinal cord, and internal organs", "Place of attachment of muscles that help frogs move", "Create a body support frame", "Both a, b, c are correct"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Frogs reproduce in the following ways:",
+        "options": ["External fertilization", "Internal fertilization", "External fertilization combined with internal fertilization", "No fertilization"],
+        "correctAnswer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Frog eyes have eyelids that can be opened and closed to:",
+        "options": ["Increase the ability to observe surroundings", " Increases vision and keeps eyes from drying out", " Protect them eyes, avoid harsh light and keep your eyes from drying out", "Prevent water from entering your eyes when swimming"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function of filtering out unnecessary substances from the blood in carp is:",
+        "options": ["liver", "kidney", "intestine", "Veins"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Carp breathe by",
+        "options": ["skin", "lungs", "skin and lungs", "gills"],
+        "correctAnswer": 4,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Fish scales arranged on tiled roofs have the following effects",
+        "options": ["Reduce water resistance", "Keep the fish's body warm", " Let the body move easily horizontally", "Reduce friction between fish skin and the environment"],
+        "correctAnswer": 3,
+        "difficulty": "medium"
+    },
+    {
+        "question": "What position do horses usually sleep in?",
+        "options": ["lie down", "standing", "sit", "kneel"],
+        "correctAnswer": 2,
+        "difficulty": "medium"
+    }
+
+    ]
+    
