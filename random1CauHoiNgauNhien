@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Đường dẫn đến file JSON chứa các câu hỏi
+json_file="questions.json"
+
+# Đọc file JSON và lấy danh sách các câu hỏi
+questions=$(jq -r '.[] | @base64' "$json_file")
+
+# Hàm để decode base64 và hiển thị câu hỏi và lựa chọn
+decode_and_display_question() {
+    local question_base64="$1"
+    local question_json=$(echo "$question_base64" | base64 --decode)
+    
+    # Lấy thông tin câu hỏi từ JSON
+    question=$(echo "$question_json" | jq -r '.question')
+    options=$(echo "$question_json" | jq -r '.options[]')
+
+    # Hiển thị câu hỏi
+    echo "Câu hỏi: $question"
+
+    # Hiển thị các lựa chọn
+    while IFS= read -r option; do
+        echo " - $option"
+    done <<< "$options"
+}
+
+# Lấy số lượng câu hỏi
+num_questions=$(echo "$questions" | wc -l)
+
+# Chọn ngẫu nhiên một câu hỏi và hiển thị
+random_index=$(( RANDOM % num_questions ))
+random_question_base64=$(echo "$questions" | sed -n "${random_index}p")
+decode_and_display_question "$random_question_base64"
