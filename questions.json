@@ -124,67 +124,67 @@
       "question": "The toadfish in the picture is representative of which of the following animal groups?",
       "options": ["Fish", "Amphibians", "Reptiles", "Animals"],
        "correctAnswer": "2",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "What action does the dragonfly touching the water represent?",
       "options": ["Signs that it's raining", "Lay eggs", "Bathing", "Mating"],
        "correctAnswer": "2",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "Which of the following groups of animals only live in water?",
       "options": ["Bees, fish, weasels, tigers, eels", "Fish, lizard, tiger, shrimp, crab", "Fish, shrimp, snails, crabs, squid", "Birds, snails, squid, crabs, octopuses"],
        "correctAnswer": "3",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "Which of the following animals has been domesticated by humans to become pets?",
       "options": ["Tiger", "Fox", "Whale", "Chicken"],
        "correctAnswer": "4",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "Animal habitats include",
       "options": ["Underwater and on land", "In the air", "In the soil", "All are correct"],
        "correctAnswer": "4",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "How many animal species have been discovered?",
       "options": ["100 thousand species", "1.5 million species", "10 million species", "3 thousand species"],
        "correctAnswer": "2",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "Which of the following birds belongs to the group of swimming birds?",
       "options": ["Ostrich", "Hello", "Penguin", "Eagle"],
        "correctAnswer": "3",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "Animals have an outer covering that helps protect their bodies",
       "options": ["Scales", "Feathers", "Cilia", "All of the above answers"],
        "correctAnswer": "1",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "Which animal needs to undergo molting when reaching adulthood?",
       "options": ["Fish", "Ants", "Butterfly", "Birds"],
        "correctAnswer": "3",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
       "question": "What position do horses usually sleep in?",
       "options": ["Lie down", "Standing", "Sit", "Kneel"],
        "correctAnswer": "2",
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
         "question": "The role of mushrooms in human life is ?",
         "options": ["Making food", "Producing beer and wine, making yeast", "Making pharmaceuticals", "All three answers above"],
         "correctAnswer": 4,
-        "difficulty": "easy"
+        "difficulty": "difficult"
     },
     {
         "question": "What is not the role of mushrooms in nature?",
@@ -316,55 +316,55 @@
         "question": "Lizards have the habit of catching prey at:",
         "options": ["During the day", "At night", "Afternoon", "Afternoon and night"],
         "correctAnswer": 1,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "The frog's musculature is most developed in:",
         "options": ["Head muscle", "Thigh muscles", "Thigh muscles and hamstrings", "Muscles and head muscles"],
         "correctAnswer": 3,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "Frog skeleton has the following roles:",
         "options": ["Create space to protect the brain, spinal cord, and internal organs", "Place of attachment of muscles that help frogs move", "Create a body support frame", "Both a, b, c are correct"],
         "correctAnswer": 3,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "Frogs reproduce in the following ways:",
         "options": ["External fertilization", "Internal fertilization", "External fertilization combined with internal fertilization", "No fertilization"],
         "correctAnswer": 1,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "Frog eyes have eyelids that can be opened and closed to:",
         "options": ["Increase the ability to observe surroundings", " Increases vision and keeps eyes from drying out", " Protect them eyes, avoid harsh light and keep your eyes from drying out", "Prevent water from entering your eyes when swimming"],
         "correctAnswer": 3,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "The function of filtering out unnecessary substances from the blood in carp is:",
         "options": ["liver", "kidney", "intestine", "Veins"],
         "correctAnswer": 2,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "Carp breathe by",
         "options": ["skin", "lungs", "skin and lungs", "gills"],
         "correctAnswer": 4,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "Fish scales arranged on tiled roofs have the following effects",
         "options": ["Reduce water resistance", "Keep the fish's body warm", " Let the body move easily horizontally", "Reduce friction between fish skin and the environment"],
         "correctAnswer": 3,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     },
     {
         "question": "What position do horses usually sleep in?",
         "options": ["lie down", "standing", "sit", "kneel"],
         "correctAnswer": 2,
-        "difficulty": "medium"
+        "difficulty": "difficult"
     }
 
     ]
