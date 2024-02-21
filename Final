@@ -1,0 +1,78 @@
+#!/bin/bash
+
+# Define the path to the JSON file
+json_file="questions.json"
+
+# Check if the JSON file exists
+if [ ! -f "$json_file" ]; then
+    echo "Error: JSON file '$json_file' not found!"
+    exit 1
+fi
+
+# Get the total number of questions in the JSON file
+total_questions=$(jq length "$json_file")
+
+# Initialize variables for score and total points
+score=0
+total_points=0
+
+# Initialize an array to keep track of shown question indices
+shown_indices=()
+
+# Initialize a counter for question numbers
+question_number=0
+
+start_time=$(date +%s)
+
+# Loop through each question in the JSON file
+while (($question_number < 10)); do
+    # Get a random index
+    random_index=$(( RANDOM % total_questions ))
+    
+    # Check if the index has already been shown
+    if [[ "${shown_indices[@]}" =~ "$random_index" ]]; then
+        continue
+    fi
+    
+    # Add the index to the array of shown indices
+    shown_indices+=("$random_index")
+    
+    # Increment the question number
+    ((question_number++))
+
+    # Get the question and its details at the selected index
+    question=$(jq -r ".[$random_index].question" "$json_file")
+    options=$(jq -r ".[$random_index].options[]" "$json_file")
+    correct_answer=$(jq -r ".[$random_index].correctAnswer" "$json_file")
+
+    # Display the question number and question
+    echo "Question $question_number: $question"
+
+    # Display options
+    echo "Options:"
+    echo "$options" | nl -n ln -w 1
+
+    # Get user's answer
+    read -p "Your answer: " user_answer
+
+    # Check answer
+    if [ "$user_answer" == "$correct_answer" ]; then
+        echo "Correct!"
+        echo "+1 point"
+        ((score++))
+    else
+        echo "Incorrect. The correct answer is: $correct_answer"
+        echo "0 points"
+    fi
+
+    echo # Add a blank line for readability between questions
+done
+
+echo "Total score: $score / 10"
+
+    end_time=$(date +%s)
+    duration=$((end_time - start_time))
+    minutes=$((duration / 60))
+    seconds=$((duration % 60))
+
+    echo "Time taken: $minutes minutes and $seconds seconds."
