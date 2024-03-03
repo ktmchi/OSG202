@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Quiz questions and answers
+questions=("What is the capital of France?" "What is the largest planet in the Solar System?" "Who wrote 'Romeo and Juliet'?")
+answers=("Paris" "Jupiter" "William Shakespeare")
+
+# Function to display question and get user input
+ask_question() {
+    dialog --title "Quiz" --inputbox "${questions[$1]}" 8 50 2>/tmp/user_answer
+    user_answer=$(cat /tmp/user_answer)
+
+    if [ "$user_answer" == "${answers[$1]}" ]; then
+        dialog --title "Result" --msgbox "Correct!" 8 30
+    else
+        dialog --title "Result" --msgbox "Incorrect. The correct answer is: ${answers[$1]}" 8 50
+    fi
+}
+
+# Main function
+main() {
+    total_questions=${#questions[@]}
+
+    for ((i=0; i<total_questions; i++)); do
+        ask_question $i
+    done
+}
+
+# Call the main function
+main
