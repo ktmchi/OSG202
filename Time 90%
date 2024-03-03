@@ -1,0 +1,83 @@
+#!/bin/bash
+
+# Define the path to the JSON file
+json_file="questions.json"
+
+# Check if the JSON file exists
+if [ ! -f "$json_file" ]; then
+    echo "Error: JSON file '$json_file' not found!"
+    exit 1
+fi
+
+# Get the total number of questions in the JSON file
+total_questions=$(jq length "$json_file")
+
+# Initialize variables for score and total points
+score=0
+total_points=0
+
+# Calculate the total time for the quiz (10 seconds per question)
+total_time=$(( 10 * total_questions ))
+
+# Function to run the quiz
+run_quiz() {
+    echo "Total time for the quiz: $total_time seconds"
+    read -n 1 -s -r -p "Press any key to start the quiz..."
+
+    start_time=$(date +%s)
+
+    for (( i = 0; i < 10; i++ )); do
+        # Get a random index
+        local random_index=$(( RANDOM % total_questions ))
+
+        # Get the question and its details at the selected index
+        local question=$(jq -r ".[$random_index].question" "$json_file")
+        local options=$(jq -r ".[$random_index].options[]" "$json_file")
+        local correct_answer=$(jq -r ".[$random_index].correctAnswer" "$json_file")
+        
+        # Display the question
+        echo "Question: $question"
+
+        # Display options
+        echo "Options:"
+        echo "$options" | nl -n ln -w 1
+
+        # Initialize a variable to keep track of whether the user has answered
+        local user_input=""
+        
+
+        # Check if the user entered an answer
+        if [[ $user_input ]]; then
+            echo "You have chosen to move to the next question."
+        else
+            echo "Time's up for this question!"
+            echo "Correct answer: $correct_answer"
+        fi
+# Countdown timer for each question (10 seconds)
+        for (( j = 10; j > 0; j-- )); do
+            echo -ne "Time remaining for this question: $j seconds\033[0K\r"
+            read -t 1 -n 1 -s user_input
+            if [ "$user_input" ]; then
+                break
+            fi
+        done        
+        # Check answer
+        if [ "$user_input" == "$correct_answer" ]; then
+            echo "Correct!"
+            ((score++))
+        else
+            echo "Incorrect!"
+        fi
+
+        echo # Add a blank line for readability between questions
+    done
+}
+
+# Main function
+main() {
+    run_quiz
+    echo "Total score: $score/10"
+}
+
+# Run main function
+main
