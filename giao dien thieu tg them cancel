@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# Define the path to the JSON file
+json_file="questions.json"
+
+# Check if the JSON file exists
+if [ ! -f "$json_file" ]; then
+    echo "Error: JSON file '$json_file' not found!"
+    exit 1
+fi
+
+# Get the total number of questions in the JSON file
+total_questions=$(jq length "$json_file")
+
+# Initialize variables for score and total points
+score=0
+
+# Start time for tracking duration
+start_time=$(date +%s)
+
+# Loop through each question in the JSON file
+for ((question_number=0; question_number<10; question_number++)); do
+    # Get a random index
+    random_index=$(( RANDOM % total_questions ))
+
+    # Get the question and its details at the selected index
+    question=$(jq -r ".[$random_index].question" "$json_file")
+    options=$(jq -r ".[$random_index].options[]" "$json_file" | sed 's/\"/\n/g')
+    correct_answer=$(jq -r ".[$random_index].correctAnswer" "$json_file")
+
+    # Prepare options for dialog menu
+    dialog_options=()
+    while read -r line; do
+        dialog_options+=("$line" "")
+    done <<< "$options"
+
+    # Display the question and options using dialog
+    user_answer=$(dialog --backtitle "Questionnaire" \
+                         --title "Question $((question_number+1))" \
+                         --menu "$question" 20 60 4 \
+                         "${dialog_options[@]}" \
+                         3>&1 1>&2 2>&3)
+
+    # Check if the user exits
+    if [ $? -ne 0 ]; then
+        break
+    fi
+
+    # Check answer
+    if [[ "$user_answer" = "$correct_answer" ]]; then
+        dialog --msgbox "Correct! +1 point" 10 30
+        ((score++))
+    else
+        dialog --msgbox "Incorrect. The correct answer is: $correct_answer" 10 40
+    fi
+done
+
+# Display total score if the user didn't exit
+if [ $? -eq 0 ]; then
+    dialog --msgbox "Your final score is: $score / 10" 10 40
+
+    # Calculate and display duration
+    end_time=$(date +%s)
+    duration=$((end_time - start_time))
+    minutes=$((duration / 60))
+    seconds=$((duration % 60))
+    dialog --msgbox "Time taken: $minutes minutes and $seconds seconds." 10 40
+fi
