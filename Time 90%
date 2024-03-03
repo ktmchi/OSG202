@@ -16,8 +16,8 @@ total_questions=$(jq length "$json_file")
 score=0
 total_points=0
 
-# Calculate the total time for the quiz (10 seconds per question)
-total_time=$(( 10 * total_questions ))
+# Calculate the total time for the quiz (15 seconds)
+total_time=$(( 15 ))
 
 # Function to run the quiz
 run_quiz() {
@@ -26,25 +26,38 @@ run_quiz() {
 
     start_time=$(date +%s)
 
-    for (( i = 0; i < 10; i++ )); do
-        # Get a random index
+    for (( i = 0; i < 10; i++ )); do 
+       # Get a random index
         local random_index=$(( RANDOM % total_questions ))
 
         # Get the question and its details at the selected index
         local question=$(jq -r ".[$random_index].question" "$json_file")
         local options=$(jq -r ".[$random_index].options[]" "$json_file")
         local correct_answer=$(jq -r ".[$random_index].correctAnswer" "$json_file")
-        
+
         # Display the question
         echo "Question: $question"
-
         # Display options
         echo "Options:"
         echo "$options" | nl -n ln -w 1
 
         # Initialize a variable to keep track of whether the user has answered
         local user_input=""
-        
+
+        # Countdown timer for each question (15 seconds)
+        for (( j = $((total_time - $(($(date +%s) - start_time)))); j > 0; j-- )); do
+            echo -ne "Time remaining for the quiz: $((total_time - $(($(date +%s) - start_time)))) seconds\033[0K\r"
+            read -t 1 -n 1 -s user_input
+            if [ "$user_input" ]; then
+                break
+            fi
+        done
+
+            # Check if the total time has elapsed
+            if [ $(( $(date +%s) - start_time )) -ge $total_time ]; then
+                break 2  # Break out of both the inner and outer loops
+            fi
+        done
 
         # Check if the user entered an answer
         if [[ $user_input ]]; then
@@ -53,14 +66,7 @@ run_quiz() {
             echo "Time's up for this question!"
             echo "Correct answer: $correct_answer"
         fi
-# Countdown timer for each question (10 seconds)
-        for (( j = 10; j > 0; j-- )); do
-            echo -ne "Time remaining for this question: $j seconds\033[0K\r"
-            read -t 1 -n 1 -s user_input
-            if [ "$user_input" ]; then
-                break
-            fi
-        done        
+
         # Check answer
         if [ "$user_input" == "$correct_answer" ]; then
             echo "Correct!"
@@ -70,7 +76,15 @@ run_quiz() {
         fi
 
         echo # Add a blank line for readability between questions
-    done
+    
+
+    # Check if the total time for the quiz has elapsed
+    if [ $(( $(date +%s) - start_time )) -ge $total_time ]; then
+        clear
+        echo "Time's up! Quiz has ended."
+        echo "Total score: $score/10"
+        exit  # Exit the script after displaying the score
+    fi
 }
 
 # Main function
