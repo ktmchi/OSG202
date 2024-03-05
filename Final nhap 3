@@ -19,7 +19,7 @@ score=0
 countdown_timer() {
     local seconds=30  # 30 seconds
     while [ $seconds -ge 0 ]; do
-    tput cup 17 46
+    tput cup 16 13
         printf "Time remaining: %02d:%02d" $((seconds/60)) $((seconds%60))
         sleep 1
         seconds=$((seconds-1))
