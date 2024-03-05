@@ -81,9 +81,11 @@ for ((question_number=0; question_number<10; question_number++)); do
     fi
     
 done
+# Kill the countdown timer process
+kill $countdown_pid >/dev/null 2>&1
+wait $countdown_pid >/dev/null 2>&1
 
-# Display total score if the user didn't exit or time is over
-    dialog --msgbox "Your final score is: $score / 10" 10 40
+
 
 # Calculate and display duration
     end_time=$(date +%s)
@@ -92,6 +94,5 @@ done
     seconds=$((duration % 60))
     dialog --msgbox "Time taken: $minutes minutes and $seconds seconds." 10 40
 
-# Kill the countdown timer process
-kill $countdown_pid >/dev/null 2>&1
-wait $countdown_pid >/dev/null 2>&1
+# Display total score if the user didn't exit or time is over
+    dialog --msgbox "Your final score is: $score / 10" 10 40
